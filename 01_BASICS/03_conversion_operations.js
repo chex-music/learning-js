@@ -1,3 +1,5 @@
+/*
+
 //string to number output
 // "33" => 33
 let score="33";
@@ -42,5 +44,29 @@ let isLoggedIn=1;
 let booleanIsLoggedIn=Boolean(isLoggedIn);
 console.log(typeof(booleanIsLoggedIn));
 console.log(booleanIsLoggedIn);
+*/
+// *************************************Operations****************************************
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 3);
+// console.log(3 + "1" + 2);
+// console.log(1 + 2 + "3");
+// console.log(1 + 2 + "3");
+
+// console.log(+true);// 1
+// console.log(+false);// 0
+// console.log(+"");// 0
+// console.log(+"abc");// NaN
+
+let x = 5;
+let y = x++;
+console.log(`x=${x} and y=${y}`);// x=6 and y=5
+
+let a = 5;
+let b = ++a;
+console.log(`a=${a} and b=${a}`);// a=6 and b=6
+
+
+
 
 
