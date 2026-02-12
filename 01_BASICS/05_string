@@ -1,0 +1,87 @@
+// let word = "hello";
+// word = "world";  // Allowed cuze we are reassigning the variable 'word' to a new string "world".
+// console.log(word);// word[0] = "H";  // ❌ Not allowed, strings are immutable in JavaScript
+
+
+//Get the first character of "Programming"
+let str = "Programming";
+console.log(str[str.length - 1]);
+
+let str2= "madam";
+// console.log(str2.includes("script"));
+// console.log(str2.replace("script","world"));
+// console.log(str2);//The original string is not changed because strings are immutable in JavaScript. 
+// The replace method returns a new string with the specified replacement,
+// but it does not modify the original string.
+
+// console.log(str2.slice(4,str.length-1));
+
+// //reverse a string
+let reverseStr = "";
+// for(let i = str2.length - 1; i >= 0; i--){
+//     reverseStr += str2[i];
+// }
+// console.log(reverseStr);
+
+// for(let i = str2.length - 1; i >= 0; i--){
+//     reverseStr += str2[i];
+// }
+// console.log("Palindrome check: " + (str2 === reverseStr));
+
+//Capitalize the first letter of a string and make the rest lowercase
+// let newStr = "";
+// for(let i = 0; i < str2.length; i++){
+//     if(i===0){
+//         newStr += str2[i].toUpperCase();
+//     }
+//     else{
+//         newStr += str2[i].toLowerCase();
+//     }
+// }
+// console.log(newStr);
+
+// //Capitalize the first letter of each word in a sentence
+// let sentence = "hello world! welcome to javaScript.";
+// let words = sentence.split(" ");
+// let wordArr = [];
+// for(let i = 0; i < words.length; i++){
+//     wordArr.push(words[i][0].toUpperCase() + words[i].slice(1));
+//     // wordArr.push(words[i][0].toUpperCase() => capitalizes the first letter of each word, 
+//     // and words[i].slice(1) => adds the rest of the word after the first letter.
+
+// }
+// console.log(wordArr.join(" "));
+
+// for(let i = 0; i < words.length; i++){
+//     wordArr[i] = words[i];
+// }
+// console.log(wordArr.join(""));
+
+//Truncate a string to a specified length and add "..." at the end if it exceeds that length
+// let newWord="ChaitanyaDesai";
+// let newCharArr = [];
+// for(let i = 0; i < newWord.length; i++){
+//     if(i < 10){
+//         newCharArr.push(newWord[i]);
+//     }   
+//     else{
+//         newCharArr.push("...");
+//     }
+// }
+// console.log(newCharArr.join(""));
+
+//Check if a string starts with a specific substring
+// let url = "https://www.example.com";
+// console.log("Starts with https://: " + url.startsWith("https://"));
+
+// let wordStr="apple,banana,orange";
+// console.log((wordStr.split(",")));
+
+//Check if two strings are anagrams of each other
+let firstWord = "Throw";
+let secondWord = "worth";
+let isAnagram = false;
+if(firstWord.length === secondWord.length){ 
+isAnagram = firstWord.toLowerCase().split("").sort().join("") === secondWord.toLowerCase().split("").sort().join("");
+}
+console.log("Both Words Are Anagrams: " + isAnagram);
