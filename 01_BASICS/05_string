@@ -5,9 +5,9 @@
 
 //Get the first character of "Programming"
 let str = "Programming";
-console.log(str[str.length - 1]);
+// console.log(str[str.length - 1]);
 
-let str2= "madam";
+let str2 = "madam";
 // console.log(str2.includes("script"));
 // console.log(str2.replace("script","world"));
 // console.log(str2);//The original string is not changed because strings are immutable in JavaScript. 
@@ -77,11 +77,37 @@ let reverseStr = "";
 // let wordStr="apple,banana,orange";
 // console.log((wordStr.split(",")));
 
-//Check if two strings are anagrams of each other
-let firstWord = "Throw";
-let secondWord = "worth";
-let isAnagram = false;
-if(firstWord.length === secondWord.length){ 
-isAnagram = firstWord.toLowerCase().split("").sort().join("") === secondWord.toLowerCase().split("").sort().join("");
-}
-console.log("Both Words Are Anagrams: " + isAnagram);
+// //Check if two strings are anagrams of each other
+// let firstWord = "Throw";
+// let secondWord = "worth";
+// let isAnagram = false;
+// if(firstWord.length === secondWord.length){ 
+// isAnagram = firstWord.toLowerCase().split("").sort().join("") === secondWord.toLowerCase().split("").sort().join("");
+// }
+// console.log("Both Words Are Anagrams: " + isAnagram);
+
+////Find the longest word in a sentence
+// let sentence = "hello world! welcome to javaScript.";
+// let words = sentence.split(" ");
+// console.log(words);
+// let len= 0;
+// let longestWordIndex = 0;
+// for(let i = 0; i < words.length; i++){
+//     if(words[i].length > len){
+//         len = words[i].length;
+//         longestWordIndex = i;
+//     }
+// }
+// console.log("Longest Word: " + words[longestWordIndex]);
+
+// //Remove duplicate characters from a string.
+// let str3 = "ababaaabbc";
+// let splittedStr = str3.split("");
+// let newArr = [];
+// newArr.push(splittedStr[0]);
+// for (let i = 1; i < str3.length; i++) {
+//     if (!newArr.includes(splittedStr[i])) {
+//         newArr.push(splittedStr[i]);
+//     }
+// }
+// console.log(newArr.join(""));
