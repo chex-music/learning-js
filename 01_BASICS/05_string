@@ -111,3 +111,11 @@ let reverseStr = "";
 //     }
 // }
 // console.log(newArr.join(""));
+
+// //to camel case
+// let str4 = "hello-world";
+// let camelCaseStr = str4.split("-").join("");
+// console.log(camelCaseStr.replace(str4.charAt(str4.indexOf("-")+1), str4.charAt(str4.indexOf("-")+1).toUpperCase()));
+
+
+
