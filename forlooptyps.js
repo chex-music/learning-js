@@ -50,6 +50,10 @@ let superHerosArray = ["Superman", "Batman", "Wonder Woman", "Flash", "Green Lan
 //     console.log(heroName);
 // })
 
+superHerosArray.forEach((heroName, index) => {
+    console.log(`${index}: ${heroName}`);
+})
+
 // // we can also define a separate function and pass it to forEach method
 // function printHeroNames(heroName){
 //     console.log(heroName);
